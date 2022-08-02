@@ -22,7 +22,7 @@ public class EventAggregator {
         this.TIMETAKEN = getDuration();
         this.TYPE = startedLog.getType();
         this.HOST = startedLog.getHost();
-        this.ALERT=validLog();
+        this.ALERT=validLog() ;
     }
 
     public Boolean validLog() {
