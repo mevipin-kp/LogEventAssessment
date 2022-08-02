@@ -46,7 +46,7 @@ public class LogProcessor {
                         LOGGER.info("Started Processing event -> {}",line);
                         LogModel model = new JsonToPojoConverter().convertToLogModelPOJO(line);
                         EventAggregator eventAggregator = processEvents(model);
-                        if(eventAggregator != null && !eventAggregator.validLog())
+                        if(eventAggregator != null)
                             LogDao.getInstance().persist(eventAggregator);
                     }
                 });
