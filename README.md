@@ -32,3 +32,9 @@ Step 2 : Run the project
 java -jar target/csuisse-project-1.0-SNAPSHOT-jar-with-dependencies.jar "your-log-file-absolute-path"
 
 ```
+
+
+
+
+* **TODO:**
+Junit Test cases
