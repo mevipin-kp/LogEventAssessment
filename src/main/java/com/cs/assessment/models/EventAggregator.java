@@ -22,11 +22,11 @@ public class EventAggregator {
         this.TIMETAKEN = getDuration();
         this.TYPE = startedLog.getType();
         this.HOST = startedLog.getHost();
-        this.ALERT=Boolean.TRUE;
+        this.ALERT=validLog();
     }
 
     public Boolean validLog() {
-        if(getDuration() <4)
+        if(this.TIMETAKEN > 4)
             return Boolean.TRUE;
         else
             return Boolean.FALSE;
